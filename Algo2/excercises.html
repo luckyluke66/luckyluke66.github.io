@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Úkoly – Algoritmy 2</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="algo2.html">← Zpět na Algoritmy 2</a>
+        </nav>
+
+        <header>
+            <h1>Úkoly – Algoritmy 2</h1>
+            <p class="subtitle">Kompletní zadání všech úkolů</p>
+        </header>
+
+        <main>
+            <!-- Úkol 1 -->
+            <section class="content-section" id="ukol1">
+                <h2>Úkol 1 – Adresář skladeb</h2>
+                <p style="color: #7f8c8d; margin-bottom: 20px;">Následující úkol pokrývá základní znalosti, které byste už měli mít z kurzu Jazyk C a Algoritmy 1.</p>
+
+                <h3>Struktura <code>struct song</code></h3>
+                <p>Vytvořte v jazyce C strukturu <code>struct song</code> pro záznam skladeb obsahující:</p>
+                <ul>
+                    <li>název skladby (<code>title</code>)</li>
+                    <li>interpreta (<code>artist</code>)</li>
+                    <li>délku skladby v sekundách (<code>length</code>)</li>
+                    <li>rok vydání (<code>year</code>)</li>
+                    <li>hodnocení skladby (1–10) (<code>rating</code>)</li>
+                </ul>
+
+                <h3>Databáze skladeb</h3>
+                <p>Vytvořte databázi skladeb jako pole struktur <code>song</code> (data si vymyslete, alespoň pět záznamů).</p>
+
+                <h3>Přístupové funkce</h3>
+                <p>Napište následující funkce (parametr <code>n</code> je vždy velikost pole):</p>
+                <pre><code>string song_title(struct song* s);
+string song_artist(struct song* s);
+int song_length(struct song* s);
+int song_year(struct song* s);
+int song_rating(struct song* s);</code></pre>
+                <p style="color: #7f8c8d; font-style: italic;">Pokud ještě neznáte pointery, můžete tyto funkce vynechat a přistupovat k položkám přímo přes <code>songs[i].title</code> apod.</p>
+
+                <h3> Práce s databází skladeb</h3>
+                <p>Napište následující funkce:</p>
+
+                <h4>Výpis délky skladby</h4>
+                <p>Vypíše délku skladby na standardní výstup pro zadaný název a interpreta:</p>
+                <pre><code>void print_length(struct song songs[], int n, string title, string artist);</code></pre>
+
+                <h4>Nejlépe hodnocená skladba</h4>
+                <p>Vrátí index skladby s nejvyšším hodnocením:</p>
+                <pre><code>int best_rated(struct song songs[], int n);</code></pre>
+
+                <h4>Zvýšení hodnocení skladby</h4>
+                <p>Zvýší hodnocení zadané skladby o danou hodnotu (max 10):</p>
+                <pre><code>void increase_rating(struct song songs[], int n, string title, string artist, int amount);</code></pre>
+
+                <h4>Snížení hodnocení skladby</h4>
+                <p>Sníží hodnocení zadané skladby o danou hodnotu (min 1):</p>
+                <pre><code>void decrease_rating(struct song songs[], int n, string title, string artist, int amount);</code></pre>
+
+                <h4>i-tá nejkratší skladba</h4>
+                <p>Vrátí index i-té nejkratší skladby:</p>
+                <pre><code>int ith_shortest(struct song songs[], int i, int n);</code></pre>
+
+                <h4>Třídění podle roku vydání</h4>
+                <p>Vypíše databázi skladeb setříděnou vzestupně podle roku vydání:</p>
+                <pre><code>void sort_songs(struct song songs[], int n);</code></pre>
+
+                <h3>Bonus (nepovinné)</h3>
+                <ul>
+                    <li>vyhledání všech skladeb jednoho interpreta</li>
+                    <li>výpis průměrné délky skladeb</li>
+                    <li>třídění podle hodnocení nebo délky</li>
+                </ul>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Můj studijní rozcestník</p>
+        </footer>
+    </div>
+</body>
+</html>
