@@ -171,6 +171,10 @@ footer a {
     text-decoration: none;
 }
 
+a {
+    color: #5dade2;
+}
+
 footer a:hover {
     text-decoration: underline;
 }
@@ -210,12 +214,12 @@ pre {
     padding: 15px;
     border-radius: 5px;
     overflow-x: auto;
-    border-left: 3px solid #5dade2;
     border: 1px solid #3a3a3a;
+    border-left: 3px solid #5dade2;
 }
 
 pre code {
-    background-color: transparent;
+    background-color: #1a1a1a;
     padding: 0;
     color: #e0e0e0;
     font-size: 0.9em;
