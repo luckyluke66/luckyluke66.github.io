@@ -103,6 +103,29 @@ main {
     color: #5dade2;
 }
 
+/* AI section on the main page */
+.home-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.ai-section {
+    margin-top: auto;
+}
+
+.ai-section h2 {
+    margin-bottom: 6px;
+    color: #c0c0c0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.ai-section p {
+    max-width: 65ch;
+    color: #a0a0a0;
+    font-size: 0.9rem;
+}
+
 /* Content Sections */
 .content-section {
     background: #2a2a2a;
