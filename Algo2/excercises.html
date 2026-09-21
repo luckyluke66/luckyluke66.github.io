@@ -21,7 +21,7 @@
             <!-- Úkol 1 -->
             <section class="content-section" id="ukol1">
                 <h2>Úkol 1 – Adresář skladeb</h2>
-                <p style="color: #7f8c8d; margin-bottom: 20px;">Následující úkol pokrývá základní znalosti, které byste už měli mít z kurzu Jazyk C a Algoritmy 1.</p>
+                <p style="color: #7f8c8d; margin-bottom: 20px;">Následující úkol pokrývá základní znalosti, které byste už měli mít z kurzů Jazyk C a Algoritmizace.</p>
 
                 <h3>Struktura <code>struct song</code></h3>
                 <p>Vytvořte v jazyce C strukturu <code>struct song</code> pro záznam skladeb obsahující:</p>
@@ -34,10 +34,12 @@
                 </ul>
 
                 <h3>Databáze skladeb</h3>
-                <p>Vytvořte databázi skladeb jako pole struktur <code>song</code> (data si vymyslete, alespoň pět záznamů).</p>
+                <p>Vytvořte databázi skladeb jako pole struktur <code>struct song</code> (data si vymyslete, alespoň pět záznamů).</p>
 
                 <h3>Přístupové funkce</h3>
-                <p>Napište následující funkce (parametr <code>n</code> je vždy velikost pole):</p>
+                <p>V tomto zadání používáme <code>string</code> jako zkratku pro <code>char *</code>. Před definici struktury a deklarace funkcí přidejte:</p>
+                <pre><code>typedef char *string;</code></pre>
+                <p>Napište následující funkce:</p>
                 <pre><code>string song_title(struct song* s);
 string song_artist(struct song* s);
 int song_length(struct song* s);
@@ -46,7 +48,7 @@ int song_rating(struct song* s);</code></pre>
                 <p style="color: #7f8c8d; font-style: italic;">Pokud ještě neznáte pointery, můžete tyto funkce vynechat a přistupovat k položkám přímo přes <code>songs[i].title</code> apod.</p>
 
                 <h3> Práce s databází skladeb</h3>
-                <p>Napište následující funkce:</p>
+                <p>Napište následující funkce (parametr <code>n</code> je vždy velikost pole):</p>
 
                 <h4>Výpis délky skladby</h4>
                 <p>Vypíše délku skladby na standardní výstup pro zadaný název a interpreta:</p>
