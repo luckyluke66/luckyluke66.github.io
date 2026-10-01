@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Témata zápočtové práce</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="fuz.html">← Zpět na předmět</a>
+        </nav>
+
+        <header>
+            <h1>Témata zápočtové práce</h1>
+            <p class="subtitle">Fuzzy logika a fuzzy množiny</p>
+        </header>
+
+        <main>
+            <section class="content-section">
+                <h2>Zápočet</h2>
+                <p>Přibližně v polovině semestru bude zadán zápočtový úkol. Vybrat si můžete jednu ze tří forem:</p>
+                <ul>
+                    <li>programovací projekt a krátké představení výsledků;</li>
+                    <li>písemný referát v rozsahu přibližně tří stran;</li>
+                    <li>přibližně 6–10minutová prezentace tématu před třídou.</li>
+                </ul>
+            </section>
+
+            <section class="content-section">
+                <h2>Programovací projekty</h2>
+                <ol class="resource-list">
+                    <li>
+                        <h3>Porovnání algoritmů k-means a fuzzy c-means</h3>
+                        <p>Implementujte algoritmy k-means a fuzzy c-means a otestujte na stejných datech. 
+                            Vizualizujte nalezené shluky a stupně příslušnosti a porovnejte vliv počtu shluků, 
+                            počátečního nastavení a parametru fuzzifikace na výsledky. Doporučuji Python + NumPy.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Simulace fuzzy regulace</h3>
+                        <p>Navrhněte jednoduchý fuzzy regulátor a otestujte jej na zvoleném dynamickém systému. 
+                            Proveďte defuzzifikaci metodou COG a porovnejte základní variantu regulátoru s variantou využívající 
+                            Truth-stressing Hedge.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Fuzzy formální konceptuální analýza</h3>
+                        <p>Implementujte základní operace fuzzy formální konceptuální analýzy: šipkové operátory, 
+                            výpočet konceptů a uspořádání konceptů do konceptuálního svazu. 
+                            Program vyzkoušejte na malé tabulce objektů a atributů s hodnotami z vybraného 
+                            residuovaného svazu, výsledný svaz vhodně vizualizujte, třeba pomocí
+                        <a href="https://phoenix.inf.upol.cz/~outrata/latvis/">LatVis</a>.</p>
+                    </li>
+                    <li>
+                        <h3>Vlastnosti fuzzy relací a jejich uzávěry</h3>
+                        <p>Vytvořte program, který načte konečnou fuzzy relaci zadanou maticí a ověří její reflexivitu, 
+                            symetrii a tranzitivitu a další vlastnosti z kapitoly 5. Program bude dále počítat reflexivní, 
+                            symetrický a tranzitivní uzávěr a umožní porovnat výsledky pro různé t-normy.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Fuzzy filtrování tabulkových dat</h3>
+                        <p>Vytvořte program, který načte numerická data ze souboru CSV a vyhodnotí vágní dotaz 
+                            (například „Notebook: levný, lehký, malý displej“). 
+                            Jednotlivá kritéria popište pomocí fuzzy množin, výsledné stupně spojte alespoň dvěma různými t-normami 
+                            a výsledky seřaďte podle stupně splnění dotazu.
+                        </p>
+                    </li>
+                </ol>
+                <p>Pokud máte rádi Haskell, můžete při řešení využít knihovnu <a href="https://hackage.haskell.org/package/fuzzySets">fuzzySets</a>. Použití knihovny není povinné. Pokud se rozhodnete pro jiný jazyk, fuzzy knihovny nepoužívejte.</p>
+            </section>
+
+            <section class="content-section">
+                <h2>Témata pro prezentaci nebo referát</h2>
+                <ol class="resource-list" start="6">
+                    <li>
+                        <h3>Geometrická interpretace Ralescuovy kardinality</h3>
+                        <p>Literatura: E. Bartl, R. Bělohlávek, <a href="https://belohlavek.inf.upol.cz/publications/BaBe--Gvrfc-IEEE-TFS.pdf">A Geometric View of Ralescu’s Many-Valued Cardinality</a>.</p>
+                    </li>
+                    <li>
+                        <h3>Pavelkova fuzzy logika</h3>
+                        <p>Představte základní myšlenku Pavelkovy fuzzy logiky a doplňte ji krátkým příkladem důkazu, 
+                            jehož stupeň dokazatelnosti není pouze 0 nebo 1.
+                        </p>
+                        <p>Literatura:</p>
+                        <ul>
+                            <li>J. Pavelka, <a href="https://onlinelibrary.wiley.com/doi/10.1002/malq.19790250304">On Fuzzy Logic I: Many-Valued Rules of Inference</a>;</li>
+                            <li>R. Bělohlávek, <a href="https://belohlavek.inf.upol.cz/publications/Bel_Psflrp.pdf">Pavelka-Style Fuzzy Logic in Retrospect and Prospect</a>.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Historie fuzzy logiky od Zadeha do současnosti</h3>
+                        <p>Zaměřte se na vznik teorie fuzzy množin, její počáteční přijetí, 
+                            rozvoj matematické fuzzy logiky a významné aplikace.
+                        </p>
+                        <p>Literatura: <em>Fuzzy Logic and Mathematics: A Historical Perspective</em>.</p>
+                    </li>
+                    <li>
+                        <h3>Fuzzy logika před Zadehem</h3>
+                        <p>Představte starší přístupy k vícehodnotové logice, například práce Łukasiewicze, 
+                            Posta, Blacka nebo Kleeneho, a vysvětlete jejich vztah k pozdější fuzzy logice.
+                        </p>
+                        <p>Literatura: <em>Fuzzy Logic and Mathematics: A Historical Perspective</em>.</p>
+                    </li>
+                    <li>
+                        <h3>Kde se berou fuzzy množiny?</h3>
+                        <p>Literatura: G. J. Klir, B. Yuan, <a href="http://www.pzs.dstu.dp.ua/logic/bibl/yuan.pdf">Fuzzy Sets and Fuzzy Logic: Theory and Applications</a>.</p>
+                    </li>
+                    <li>
+                        <h3>Fuzzy relační rovnice</h3>
+                        <p>Představte základní typy fuzzy relačních rovnic, podmínky existence řešení 
+                            a metody výpočtu největších nebo minimálních řešení.
+                        </p>
+                        <p>Literatura:</p>
+                        <ul>
+                            <li>E. Sanchez, <a href="https://doi.org/10.1016/S0019-9958(76)90446-0">Resolution of Composite Fuzzy Relation Equations</a>;</li>
+                            <li>E. Bartl, M. Trnečka, <a href="https://doi.org/10.1080/03081079.2020.1865340">Covering of Minimal Solutions to Fuzzy Relational Equations</a>.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Necessity of category fuzziness</h3>
+                        <p>Fuzzy kategorizace objektů, spojení s fuzzy shlukováním, příklady.</p>
+                        <p>Literatura: G. L. Murphy, <a href="https://web.eecs.umich.edu/~stellayu/teach/2023action/papers/2002murphyConcepts.pdf">The Big Book of Concepts</a>, zejména kapitola 2.</p>
+                    </li>
+                    <li>
+                        <h3>Lingvistické proměnné</h3>
+                        <p>Literatura: L. A. Zadeh, <a href="https://doi.org/10.1016/0020-0255(75)90036-5">The Concept of a Linguistic Variable and Its Application to Approximate Reasoning – I</a>.</p>
+                    </li>
+                    <li>
+                        <h3>Operace rozdílu v MV-algebrách a její zobecnění</h3>
+                        <p>Představte operaci rozdílu ve standardní Łukasiewiczově algebře (MV-algebře) a její vztah k negaci a implikaci. 
+                            Vysvětlete, které vlastnosti se zachovají v obecném residuovaném svazu a proč zde nemusí existovat 
+                            jediná kanonická operace rozdílu.
+                        </p>
+                        <p>Literatura:</p>
+                        <ul>
+                            <li>A. de Simone, D. Mundici, M. Navara, <a href="https://www.dml.cz/bitstream/handle/10338.dmlcz/127812/CzechMathJ_53-2003-2_18.pdf">A Cantor–Bernstein Theorem for σ-Complete MV-Algebras</a>, úvodní část o operacích MV-algeber;</li>
+                            <li>J. Rachůnek, <a href="https://www.dml.cz/handle/10338.dmlcz/127423">DRl-Semigroups and MV-Algebras</a>.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Fuzzy kvantifikátory</h3>
+                        <p>Vysvětlete reprezentaci výrazů jako „většina“, „málo“, „přibližně pět“ nebo „téměř všichni“ pomocí fuzzy množin. 
+                            Ukažte, jak lze vyhodnotit pravdivost jednoduchého kvantifikovaného tvrzení.
+                        </p>
+                        <p>Literatura: <a href="https://doi.org/10.1016/0898-1221(83)90013-5">A Computational Approach to Fuzzy Quantifiers in Natural Languages</a>.</p>
+                    </li>
+                </ol>
+            </section>
+        </main>
+
+        <footer>
+            <div style="margin-bottom: 15px;">
+                <strong>Kontakt:</strong><br>
+                Email: <a href="mailto:lukas.balog01@upol.cz" style="color: #3498db;">lukas.balog01@upol.cz</a><br>
+                Discord: <a href="https://discord.com/users/491619762862948353" style="color: #3498db;">@luckyluke6666</a><br>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
